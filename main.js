@@ -64,9 +64,42 @@ function markActiveNav() {
   if (link) link.classList.add('active');
 }
 
+/* ── Mobile hamburger menu toggle ── */
+function initMobileMenu() {
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  const navOverlay = document.getElementById('navOverlay');
+  
+  if (!hamburger || !navLinks || !navOverlay) return;
+  
+  function toggleMenu() {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    navOverlay.classList.toggle('active');
+    // Prevent body scroll when menu is open
+    document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+  }
+  
+  function closeMenu() {
+    hamburger.classList.remove('active');
+    navLinks.classList.remove('active');
+    navOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  
+  hamburger.addEventListener('click', toggleMenu);
+  navOverlay.addEventListener('click', closeMenu);
+  
+  // Close menu when clicking a link
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+}
+
 /* ── Init ── */
 document.addEventListener('DOMContentLoaded', function () {
   markActiveNav();
+  initMobileMenu();
   if (document.getElementById('cd-d')) {
     updateCountdown();
     setInterval(updateCountdown, 1000);
