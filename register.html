@@ -9,19 +9,26 @@
 <body>
 
 <!-- ── NAV ── -->
+<!-- ── NAV ── -->
 <nav>
   <div class="nav-logo"><span class="dot"></span> RR2026 &middot; Bali</div>
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="program.html">Program</a>
-    <a href="speakers.html">Speakers</a>
-    <a href="committee.html">Committee</a>
-    <a href="abstracts.html">Abstracts</a>
-    <a href="venue.html">Venue</a>
-    <a href="contact.html">Contact</a>
-    <a href="register.html" class="nav-cta active">Register Now</a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
+    <a data-page="home"      href="index.html">Home</a>
+    <a data-page="program"   href="program.html">Program</a>
+    <a data-page="speakers"  href="speakers.html">Speakers</a>
+    <a data-page="committee" href="committee.html">Committee</a>
+    <a data-page="abstracts" href="abstracts.html">Abstracts</a>
+    <a data-page="venue"     href="venue.html">Venue</a>
+    <a data-page="contact"   href="contact.html">Contact</a>
+    <a data-page="register"  href="register.html" class="nav-cta">Register Now</a>
   </div>
 </nav>
+<div class="nav-overlay" id="navOverlay"></div>
 
 <div style="padding-top:58px;">
   <div class="page-header">
