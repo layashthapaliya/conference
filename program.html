@@ -9,11 +9,17 @@
 <body>
 
 <!-- ── NAV ── -->
+<!-- ── NAV ── -->
 <nav>
   <div class="nav-logo"><span class="dot"></span> RR2026 &middot; Bali</div>
-  <div class="nav-links">
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <div class="nav-links" id="navLinks">
     <a data-page="home"      href="index.html">Home</a>
-    <a data-page="program"   href="program.html"   class="active">Program</a>
+    <a data-page="program"   href="program.html">Program</a>
     <a data-page="speakers"  href="speakers.html">Speakers</a>
     <a data-page="committee" href="committee.html">Committee</a>
     <a data-page="abstracts" href="abstracts.html">Abstracts</a>
@@ -22,6 +28,7 @@
     <a data-page="register"  href="register.html" class="nav-cta">Register Now</a>
   </div>
 </nav>
+<div class="nav-overlay" id="navOverlay"></div>
 
 <div style="padding-top:58px;">
   <div class="page-header">
