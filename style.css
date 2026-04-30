@@ -96,6 +96,13 @@ section     { padding: 4.5rem 0; }
 .sec-teal   { background: var(--teal); }
 .sec-dark   { background: var(--text); }
 
+.about-grid { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 4rem; 
+  align-items: start; 
+}
+
 /* ── NAV ── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
@@ -498,7 +505,12 @@ footer { background: var(--text); color: rgba(255,255,255,0.55); padding: 2.75re
   .grid-4   { grid-template-columns: 1fr 1fr; }
   .steps-row { grid-template-columns: 1fr 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+  
+  /* Hero adjustments for tablets */
+  .hero-content { padding: 3rem 1.5rem 3rem; }
+  .hero-meta { gap: 1.5rem; }
 }
+
 @media (max-width: 580px) {
   .grid-3, .grid-4, .steps-row { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
@@ -506,4 +518,148 @@ footer { background: var(--text); color: rgba(255,255,255,0.55); padding: 2.75re
   .nav-links a { font-size: 0.72rem; padding: 0.28rem 0.4rem; }
   .footer-grid { grid-template-columns: 1fr; }
   .microbe-key { display: none; }
+  
+  /* Enhanced mobile styles */
+  .container { padding: 0 1.25rem; }
+  section { padding: 3rem 0; }
+  
+  /* Hero mobile optimizations */
+  .hero { min-height: auto; }
+  .hero-content { padding: 2.5rem 1.25rem 2.5rem; }
+  .hero h1 { font-size: 1.75rem; margin-bottom: 0.85rem; }
+  .hero-sub { font-size: 0.92rem; margin-bottom: 1.75rem; }
+  .hero-meta { 
+    gap: 1rem; 
+    padding: 1rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .meta-item { 
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  .meta-lbl { font-size: 0.65rem; }
+  .meta-val { font-size: 0.85rem; }
+  .hero-btns { 
+    flex-direction: column; 
+    width: 100%;
+    gap: 0.6rem;
+  }
+  .hero-btns .btn { 
+    width: 100%; 
+    justify-content: center;
+    padding: 0.72rem 1rem;
+  }
+  .hosts-strip { 
+    margin-top: 1.75rem; 
+    padding-top: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+  
+  /* Section titles */
+  .section-title { font-size: 1.5rem; }
+  .section-lead { font-size: 0.9rem; }
+  
+  /* Grid layouts for cards */
+  .topic-card, .info-card { 
+    padding: 1.15rem;
+  }
+  .topic-icon { font-size: 1.75rem; }
+  .topic-title { font-size: 0.95rem; }
+  .topic-desc { font-size: 0.82rem; }
+  
+  .ic-icon { font-size: 1.75rem; }
+  .ic-title { font-size: 0.95rem; }
+  .ic-text { font-size: 0.82rem; }
+  
+  /* About section grid */
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+  
+  /* Stats box */
+  .stat-box { padding: 1.35rem 1.15rem; }
+  .stat-row { gap: 0.75rem; }
+  .stat-num { font-size: 1.5rem; }
+  .stat-lbl { font-size: 0.72rem; }
+  
+  /* Page headers */
+  .page-header { padding: 2rem 0 1.5rem; }
+  .page-header h1 { font-size: 1.75rem; }
+  
+  /* Speaker cards */
+  .speaker-card { padding: 1rem; }
+  .speaker-avatar { width: 56px; height: 56px; }
+  .speaker-initials { font-size: 1rem; }
+  .spk-name { font-size: 0.9rem; }
+  .spk-role { font-size: 0.75rem; }
+  .spk-affil { font-size: 0.73rem; }
+  .spk-slot { font-size: 0.7rem; }
+  
+  /* Committee cards */
+  .comm-card { padding: 1rem; }
+  .comm-avatar { width: 56px; height: 56px; }
+  .comm-initials { font-size: 1rem; }
+  .comm-name { font-size: 0.9rem; }
+  .comm-role { font-size: 0.75rem; }
+  .comm-affil { font-size: 0.73rem; }
+  
+  /* Timeline */
+  .timeline-item { padding-left: 1.75rem; }
+  .timeline-dot { width: 10px; height: 10px; left: 0; }
+  .tl-time { font-size: 0.7rem; }
+  .tl-title { font-size: 0.88rem; }
+  .tl-desc { font-size: 0.78rem; }
+  
+  /* Program tables */
+  .prog-day { padding: 1.15rem; }
+  .prog-meta .pm-item { font-size: 0.72rem; }
+  .prog-table { font-size: 0.82rem; }
+  
+  /* Forms */
+  .form-card { padding: 1.35rem; }
+  .form-card h3 { font-size: 1.05rem; margin-bottom: 1.15rem; }
+  
+  /* Footer */
+  footer { padding: 2rem 1.25rem 1.5rem; }
+  .footer-grid { gap: 2rem; }
+  .footer-bottom { 
+    flex-direction: column; 
+    gap: 0.75rem; 
+    text-align: center;
+  }
+  
+  /* Navigation mobile improvements */
+  .nav-logo { font-size: 0.88rem; }
+  .nav-links { gap: 0.1rem; }
+  .nav-cta { 
+    margin-left: 0.25rem;
+    padding: 0.32rem 0.55rem !important;
+  }
+  
+  /* Countdown (if kept) */
+  .countdown-bar { 
+    padding: 1rem 1.25rem; 
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .cd-lbl { font-size: 0.68rem; }
+  .cd-units { gap: 0.75rem; }
+  .cd-num { font-size: 1.35rem; min-width: 38px; }
+  .cd-unit-lbl { font-size: 0.65rem; }
+}
+
+/* Extra small devices */
+@media (max-width: 380px) {
+  .hero h1 { font-size: 1.5rem; }
+  .hero-badge { font-size: 0.65rem; padding: 0.3rem 0.7rem; }
+  .section-title { font-size: 1.35rem; }
+  .nav-links a { font-size: 0.68rem; padding: 0.25rem 0.35rem; }
+  .btn { font-size: 0.82rem; padding: 0.65rem 1.1rem; }
+  .topic-card, .info-card { padding: 1rem; }
 }
