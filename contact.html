@@ -49,7 +49,7 @@
           <p class="eyebrow">Secretariat</p>
           <h2 class="section-title" style="font-size:1.35rem;">Reach <em>Us</em></h2>
           <div class="rule"></div>
-          <div class="cdet"><div class="cdet-icon">📧</div><div><div class="cdet-lbl">General Enquiries</div><div class="cdet-val">rr2026@unud.ac.id</div></div></div>
+          <div class="cdet"><div class="cdet-icon">📧</div><div><div class="cdet-lbl">General Enquiries</div><div class="cdet-val"><a href="mailto:rr2026enquiry@gmail.com" style="color:inherit;">rr2026enquiry@gmail.com</a></div></div></div>
           <div class="cdet"><div class="cdet-icon">📝</div><div><div class="cdet-lbl">Abstract Submission</div><div class="cdet-val">rr2026@unud.ac.id</div></div></div>
           <div class="cdet"><div class="cdet-icon">💳</div><div><div class="cdet-lbl">Registration &amp; Payment</div><div class="cdet-val">rr2026@unud.ac.id</div></div></div>
           <div class="cdet"><div class="cdet-icon">🏛️</div><div><div class="cdet-lbl">Host — Udayana University</div><div class="cdet-val">Engineering Faculty<br>Jimbaran, Bali 80361, Indonesia</div></div></div>
@@ -79,6 +79,26 @@
             <div class="form-group"><label class="form-lbl">Message</label><textarea class="form-ta form-inp" rows="5" placeholder="Your message…"></textarea></div>
             <button type="submit" id="contact-btn" class="btn btn-teal btn-full">Send Message →</button>
           </form>
+          <script>
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+              e.preventDefault();
+              var nameVal = this.querySelector('input[type="text"]').value;
+              var emailVal = this.querySelector('input[type="email"]').value;
+              var institutionVal = this.querySelectorAll('input[type="text"]')[1].value;
+              var subjectVal = this.querySelector('.form-sel').value;
+              var messageVal = this.querySelector('.form-ta').value;
+
+              var toEmail = 'rr2026enquiry@gmail.com';
+              var mailSubject = encodeURIComponent('[RR2026] ' + subjectVal);
+              var body = encodeURIComponent(
+                'Name: ' + nameVal + '\n' +
+                'Email: ' + emailVal + '\n' +
+                'Institution: ' + institutionVal + '\n\n' +
+                messageVal
+              );
+              window.location.href = 'mailto:' + toEmail + '?subject=' + mailSubject + '&body=' + body;
+            });
+          </script>
         </div>
 
       </div>
