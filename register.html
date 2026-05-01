@@ -66,26 +66,28 @@
               <li><span class="fee-ck">✓</span>Symposium materials &amp; proceedings</li>
               <li><span class="fee-ck">✓</span>Certificate of participation</li>
             </ul>
-            <div class="fee-note"><strong>Payment:</strong> Bank transfer details will be sent upon confirmation. Receipts issued for all payments. Contact rr2026@unud.ac.id for questions.</div>
+            <div class="fee-note"><strong>Payment:</strong> Bank transfer details will be sent upon confirmation. Receipts issued for all payments. Contact rr2026registration@gmail.com for questions.</div>
           </div>
         </div>
 
         <!-- Registration form -->
         <div class="form-card">
           <h3>Registration Form</h3>
-          <form id="reg-form">
+          <form id="reg-form" action="https://formspree.io/f/xgodeqoa" method="POST">
+            <input type="hidden" name="_subject" value="[RR2026] New Registration">
+            <input type="hidden" name="_replyto" value="">
             <div class="form-row">
-              <div class="form-group"><label class="form-lbl">First Name <span class="req">*</span></label><input type="text" class="form-inp" placeholder="e.g. John" required></div>
-              <div class="form-group"><label class="form-lbl">Last Name <span class="req">*</span></label><input type="text" class="form-inp" placeholder="e.g. Smith" required></div>
+              <div class="form-group"><label class="form-lbl">First Name <span class="req">*</span></label><input type="text" name="first_name" class="form-inp" placeholder="e.g. John" required></div>
+              <div class="form-group"><label class="form-lbl">Last Name <span class="req">*</span></label><input type="text" name="last_name" class="form-inp" placeholder="e.g. Smith" required></div>
             </div>
-            <div class="form-group"><label class="form-lbl">Email Address <span class="req">*</span></label><input type="email" class="form-inp" placeholder="john.smith@university.edu" required></div>
-            <div class="form-group"><label class="form-lbl">Institution / University <span class="req">*</span></label><input type="text" class="form-inp" placeholder="e.g. University of Tokyo" required></div>
+            <div class="form-group"><label class="form-lbl">Email Address <span class="req">*</span></label><input type="email" name="email" class="form-inp" placeholder="john.smith@university.edu" required></div>
+            <div class="form-group"><label class="form-lbl">Institution / University <span class="req">*</span></label><input type="text" name="institution" class="form-inp" placeholder="e.g. University of Tokyo" required></div>
             <div class="form-row">
-              <div class="form-group"><label class="form-lbl">Department / Faculty</label><input type="text" class="form-inp" placeholder="e.g. Environmental Eng."></div>
-              <div class="form-group"><label class="form-lbl">Country <span class="req">*</span></label><input type="text" class="form-inp" placeholder="e.g. Japan" required></div>
+              <div class="form-group"><label class="form-lbl">Department / Faculty</label><input type="text" name="department" class="form-inp" placeholder="e.g. Environmental Eng."></div>
+              <div class="form-group"><label class="form-lbl">Country <span class="req">*</span></label><input type="text" name="country" class="form-inp" placeholder="e.g. Japan" required></div>
             </div>
             <div class="form-group"><label class="form-lbl">Participation Type <span class="req">*</span></label>
-              <select class="form-sel form-inp" required>
+              <select name="participation_type" class="form-sel form-inp" required>
                 <option value="">— Select —</option>
                 <option>Oral Presenter</option>
                 <option>Poster Presenter</option>
@@ -94,7 +96,7 @@
               </select>
             </div>
             <div class="form-group"><label class="form-lbl">Preferred Session (if presenting)</label>
-              <select class="form-sel form-inp">
+              <select name="preferred_session" class="form-sel form-inp">
                 <option>Not Applicable</option>
                 <option>Session 1 — Advances in Anaerobic Digestion</option>
                 <option>Session 2 — Other Organic Waste Valorization Processes</option>
@@ -104,11 +106,40 @@
                 <option>Poster Session</option>
               </select>
             </div>
-            <div class="form-group"><label class="form-lbl">Dietary Requirements / Special Needs</label><input type="text" class="form-inp" placeholder="e.g. vegetarian, halal, wheelchair access…"></div>
-            <div class="form-group"><label class="form-lbl">Additional Comments</label><textarea class="form-ta form-inp" placeholder="Any questions or special requests…"></textarea></div>
+            <div class="form-group"><label class="form-lbl">Dietary Requirements / Special Needs</label><input type="text" name="dietary" class="form-inp" placeholder="e.g. vegetarian, halal, wheelchair access…"></div>
+            <div class="form-group"><label class="form-lbl">Additional Comments</label><textarea name="comments" class="form-ta form-inp" placeholder="Any questions or special requests…"></textarea></div>
             <button type="submit" id="reg-btn" class="btn btn-teal btn-full">Submit Registration →</button>
             <p class="form-hint" style="text-align:center;margin-top:0.55rem;">Payment instructions and confirmation sent within 3 working days.</p>
+            <div id="reg-success" style="display:none;text-align:center;margin-top:1rem;color:#2a9d8f;font-weight:600;">✓ Registration received! We'll be in touch within 3 working days.</div>
           </form>
+          <script>
+            var regForm = document.getElementById('reg-form');
+            regForm.addEventListener('submit', function(e) {
+              e.preventDefault();
+              var btn = document.getElementById('reg-btn');
+              btn.textContent = 'Submitting…';
+              btn.disabled = true;
+              fetch(regForm.action, {
+                method: 'POST',
+                body: new FormData(regForm),
+                headers: { 'Accept': 'application/json' }
+              }).then(function(res) {
+                if (res.ok) {
+                  regForm.reset();
+                  btn.textContent = 'Submitted ✓';
+                  document.getElementById('reg-success').style.display = 'block';
+                } else {
+                  btn.textContent = 'Submit Registration →';
+                  btn.disabled = false;
+                  alert('Something went wrong. Please email us directly at rr2026registration@gmail.com');
+                }
+              }).catch(function() {
+                btn.textContent = 'Submit Registration →';
+                btn.disabled = false;
+                alert('Something went wrong. Please email us directly at rr2026registration@gmail.com');
+              });
+            });
+          </script>
         </div>
 
       </div>
@@ -141,7 +172,7 @@
     <div><div class="footer-col-ttl">Participation</div><ul class="footer-links"><li><a href="abstracts.html">Submit Abstract</a></li><li><a href="register.html">Register Now</a></li><li><a href="venue.html">Venue &amp; Travel</a></li><li><a href="contact.html">Contact</a></li></ul></div>
     <div><div class="footer-col-ttl">Organizers</div><ul class="footer-links"><li><a href="https://unud.ac.id" target="_blank">Udayana University</a></li><li><a href="https://hkust.edu.hk" target="_blank">HKUST</a></li><li><a href="https://korea.ac.kr" target="_blank">Korea University</a></li></ul></div>
   </div>
-  <div class="footer-bottom"><span>© 2026 Joint Mini-Symposium on Resource Recovery · Bali, Indonesia</span><span>rr2026@unud.ac.id</span></div>
+  <div class="footer-bottom"><span>© 2026 Joint Mini-Symposium on Resource Recovery · Bali, Indonesia</span><span><a href="mailto:rr2026enquiry@gmail.com" style="color:inherit;">rr2026enquiry@gmail.com</a></span></div>
 </footer>
 <script src="main.js"></script>
 </body>
