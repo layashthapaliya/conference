@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | RR2026 — Joint Mini-Symposium on Resource Recovery, Bali</title>
 <link rel="stylesheet" href="style.css">
+<style>
+  @media (max-width: 700px) {
+    .contact-grid {
+      grid-template-columns: 1fr !important;
+      gap: 2rem !important;
+    }
+    .faq-grid {
+      grid-template-columns: 1fr !important;
+      gap: 0 !important;
+    }
+  }
+</style>
 </head>
 <body>
 
@@ -42,7 +54,7 @@
 
   <section class="sec-white">
     <div class="container">
-      <div style="display:grid;grid-template-columns:1fr 1.5fr;gap:3rem;align-items:start;">
+      <div style="display:grid;grid-template-columns:1fr 1.5fr;gap:3rem;align-items:start;" class="contact-grid">
 
         <!-- Contact details -->
         <div>
@@ -120,7 +132,7 @@
         <p class="eyebrow">Frequently Asked Questions</p>
         <h2 class="section-title">FAQ</h2>
         <div class="rule"></div>
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 3rem;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 3rem;" class="faq-grid">
           <div>
             <div class="faq-item"><div class="faq-q">Who can attend the symposium?</div><div class="faq-a">The symposium is open to researchers, practitioners, and stakeholders from institutions worldwide who work in the areas of organic waste valorization, anaerobic digestion, resource recovery, and related sustainability topics. Space is limited to 50–60 participants.</div></div>
             <div class="faq-item"><div class="faq-q">Will there be a proceedings publication?</div><div class="faq-a">Details on a proceedings volume or journal special issue will be announced. Selected high-quality presentations may be considered for publication in a special issue.</div></div>
