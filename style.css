@@ -955,6 +955,6 @@ footer { background: var(--text); color: rgba(255,255,255,0.55); padding: 2.75re
     height: 200px;
   }
   .cm-photo {
-    height: 180px;
+    height: 300px;
   }
 }
