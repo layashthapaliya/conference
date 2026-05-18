@@ -952,9 +952,9 @@ footer { background: var(--text); color: rgba(255,255,255,0.55); padding: 2.75re
     font-size: 1.5rem;
   }
   .speaker-avatar-photo {
-    height: 500px;
+    height: 450px;
   }
   .cm-photo {
-    height: 500px;
+    height: 450px;
   }
 }
