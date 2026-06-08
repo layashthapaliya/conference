@@ -208,6 +208,20 @@
           </div>
         </div>
 
+         <!-- Prof. Feng Jiang -->
+        <div class="speaker-card-enhanced">
+          <div class="speaker-avatar-photo">
+            <img src="feng.PNG" alt="Prof. Feng Jiang" onerror="this.parentElement.innerHTML='<span class=\'speaker-initials\'>FJ</span>'">
+          </div>
+          <div class="spk-body">
+            <div class="spk-name">Prof. Feng Jiang</div>
+            <div class="spk-role">Professor, School of Environmental Science and Engineering</div>
+            <div class="spk-affil">Sun Yat-Sen University</div>
+            <div class="spk-talk-title">"Paradigm-shifted approach for resource recovery from mine water"</div>
+            <button class="btn-bio" onclick="openBio('fengjiang')">View Biography</button>
+          </div>
+        </div>
+
         <!-- Dr. Feixiang Zan -->
         <div class="speaker-card-enhanced">
           <div class="speaker-avatar-photo">
@@ -365,8 +379,12 @@ const biographies = {
   siningzhou: {
     name: "Dr. Sining Zhou",
     content: "Dr. Sining Zhou holds a Ph.D. in Environmental Engineering from Sun Yat-sen University, China, where he presently serves as a postdoctoral researcher in the School of Environmental Science and Engineering. His academic focus lies at the intersection of environmental functional materials and pollutant degradation. Specifically, his work explores the environmental applications of micro-nano bubble technology and three-dimensional electrode-enhanced biological wastewater treatment systems to address complex industrial effluents."
+  },
+  fengjiang: {
+    name: "Prof. Feng Jiang",
+    content: "Prof. Feng Jiang is a Professor in the School of Environmental Science & Engineering at Sun Yat-sen University, China. His research focuses on cutting-edge technologies for wastewater management and resource recovery, with a particular emphasis on sulfur-based biotechnologies and AI-enhanced modeling. To promote global education in water technologies, he developed SIMPO (Simplified Intelligent Simulation Platform Online), a free, open-source platform for wastewater treatment process simulation (www.simpowater.org). In recognition of his contributions to water and wastewater studies, he was named a Distinguished Young Scholar by the National Natural Science Foundation of China. He has also received the First Prize of the Guangdong Provincial Technological Invention Award (Rank 1) and the First Prize of the Huaxia Construction Science and Technology Award (Rank 1). With over 100 journal papers published in leading journals such as Nature Communications, Nature Water, Environmental Science & Technology, and Water Research, he currently serves as the Co-Editor-in-Chief of International Biodeterioration & Biodegradation and an Associate Editor of Water Research."
   }
-};
+  };
 
 function openBio(speakerId) {
   const bio = biographies[speakerId];
