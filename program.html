@@ -9,7 +9,6 @@
 <body>
 
 <!-- ── NAV ── -->
-<!-- ── NAV ── -->
 <nav>
   <div class="nav-logo"><span class="dot"></span> RR2026 &middot; Bali</div>
   <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -50,44 +49,384 @@
 
       <!-- DAY 1 -->
       <div class="day-content active schedule" id="day-1">
-        <div class="sched-row"><div class="sched-time">08:30 – 09:00</div><div><span class="sched-tag tag-ceremony">Arrival</span><div class="sched-title">Registration &amp; Welcome Coffee</div><div class="sched-desc">On-site registration, badge collection, and morning refreshments.</div></div></div>
-        <div class="sched-row"><div class="sched-time">09:00 – 09:30</div><div><span class="sched-tag tag-ceremony">Ceremony</span><div class="sched-title">Opening Ceremony</div><div class="sched-desc">Welcome by Udayana University · Short remarks from HKUST and Korea University · Official launch of the Joint Mini-Symposium · Group photo</div></div></div>
-        <div class="sched-row"><div class="sched-time">09:30 – 10:10</div><div><span class="sched-tag tag-keynote">Plenary 1</span><div class="sched-title">Dr. Guanghao CHEN</div><div class="sched-desc">"Sewage information: new opportunities"</div></div></div>
-        <div class="sched-row"><div class="sched-time">10:10 – 10:40</div><div><span class="sched-tag tag-keynote">Keynote 1</span><div class="sched-title">Prof. Jae Woo Lee, Ph.D.</div><div class="sched-desc">"Technical challenges and solutions for biogas upgrading and biomethanation"</div></div></div>
-        <div class="sched-row"><div class="sched-time">10:40 – 11:10</div><div><span class="sched-tag tag-keynote">Keynote 2</span><div class="sched-title">Prof. Samir Kumar Khanal, Ph.D.</div><div class="sched-desc">"Applications of machine learning and AI in anaerobic digestion"</div></div></div>
-        <div class="sched-row"><div class="sched-time">11:10 – 11:30</div><div><span class="sched-tag tag-break">Break</span><div class="sched-title">Coffee Break</div></div></div>
-        <div class="sched-row"><div class="sched-time">11:30 – 12:00</div><div><span class="sched-tag tag-keynote">Keynote 3</span><div class="sched-title">Prof. Tjokorda Gde Tirta Nindhia, S.T., M.T.</div><div class="sched-desc">"The effect of addition vegetable waste to interactions between anaerobic bacteria in methanogenic environments"</div></div></div>
-        <div class="sched-row"><div class="sched-time">12:00 – 13:30</div><div><span class="sched-tag tag-break">Break</span><div class="sched-title">Lunch &amp; Networking</div></div></div>
-        <div class="sched-row"><div class="sched-time">13:30 – 15:30</div><div><span class="sched-tag tag-session">Session 1:</span><span class="sched-tag tag-session">Advances in Anaerobic Digestion Technologies</span><br><span class="sched-tag tag-keynote">Keynote 4</span><div class="sched-title">Prof. Sungpyo Kim, Ph.D.</div><div class="sched-desc">"Creating a safe space for infectious diseases via wastewater data mining"</div></div></div>
-        <div class="sched-row"><div class="sched-time">15:30 – 15:45</div><div><span class="sched-tag tag-break">Break</span><div class="sched-title">Coffee Break</div></div></div>
-        <div class="sched-row"><div class="sched-time">15:45 – 17:45</div><div><span class="sched-tag tag-session">Session 2:</span><span class="sched-tag tag-session">Advances in Biological Waste Treatment and Resource Recovery</span><br><span class="sched-tag tag-keynote">Keynote 5</span><div class="sched-title">Prof. Kadek Diana Harmayani</div><div class="sched-desc">"Reframing organic waste valorization through Tri Hita Karana: bridging circular economy and climate resilience"</div></div></div>
-        <div class="sched-row"><div class="sched-time">18:30 onwards</div><div><span class="sched-tag tag-social">Social</span><div class="sched-title">Welcome Dinner &amp; Networking</div><div class="sched-desc">Dinner at TBD venue · Balinese cultural performance</div></div></div>
-      </div>
+
+        <div class="sched-row">
+          <div class="sched-time">09:00 – 10:00</div>
+          <div>
+            <span class="sched-tag tag-ceremony">Arrival</span>
+            <div class="sched-title">Registration &amp; Welcome Coffee</div>
+            <div class="sched-desc">On-site registration, badge collection, refreshments.</div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">10:00 – 10:30</div>
+          <div>
+            <span class="sched-tag tag-ceremony">Ceremony</span>
+            <div class="sched-title">Opening Ceremony</div>
+            <div class="sched-desc">Welcome by Udayana University · Remarks from HKUST and Korea University · Group photo</div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">10:30 – 11:15</div>
+          <div>
+            <span class="sched-tag tag-plenary">Plenary</span>
+            <div class="sched-title">Prof. Guanghao Chen</div>
+            <div class="sched-sub">The Hong Kong University of Science and Technology (HKUST), Hong Kong, China</div>
+            <div class="sched-desc"><em>"Past, present, and future sewage treatment research"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">11:15 – 11:30</div>
+          <div>
+            <span class="sched-tag tag-break">Break</span>
+            <div class="sched-title">Coffee Break</div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">11:30 – 12:00</div>
+          <div>
+            <span class="sched-tag tag-keynote">Keynote</span>
+            <div class="sched-title">Prof. Jae Woo Lee</div>
+            <div class="sched-sub">Korea University, Republic of Korea</div>
+            <div class="sched-desc"><em>"Technical challenges and solutions for biogas upgrading and biomethanation"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">12:00 – 12:30</div>
+          <div>
+            <span class="sched-tag tag-keynote">Keynote</span>
+            <div class="sched-title">Prof. Samir Kumar Khanal</div>
+            <div class="sched-sub">The Hong Kong University of Science and Technology (HKUST), Hong Kong, China</div>
+            <div class="sched-desc"><em>"Applications of machine learning and AI in anaerobic digestion"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">12:30 – 13:00</div>
+          <div>
+            <span class="sched-tag tag-keynote">Keynote</span>
+            <div class="sched-title">Prof. Tjokorda Gde Tirta Nindhia</div>
+            <div class="sched-sub">Udayana University, Bali, Indonesia</div>
+            <div class="sched-desc"><em>"The effect of addition of vegetable waste to interactions between anaerobic bacteria in methanogenic environments"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">13:00 – 14:30</div>
+          <div>
+            <span class="sched-tag tag-break">Break</span>
+            <div class="sched-title">Lunch &amp; Networking</div>
+          </div>
+        </div>
+
+        <!-- Session 1 -->
+        <div class="sched-row session-header">
+          <div class="sched-time">14:30 – 16:00</div>
+          <div>
+            <span class="sched-tag tag-session">Session 1</span>
+            <div class="sched-title">Advances in Anaerobic Digestion Technologies</div>
+          </div>
+        </div>
+
+        <div class="sched-row sched-indented">
+          <div class="sched-time">14:30 – 15:00</div>
+          <div>
+            <span class="sched-tag tag-keynote">Keynote</span>
+            <div class="sched-title">Prof. Gang Luo</div>
+            <div class="sched-sub">Fudan University, China</div>
+            <div class="sched-desc"><em>"Environmental effects associated with bioconversion of organic solid waste"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row sched-indented">
+          <div class="sched-time">15:00 – 15:20</div>
+          <div>
+            <span class="sched-tag tag-invited">Invited Talk</span>
+            <div class="sched-title">Dr. Feixiang Zan</div>
+            <div class="sched-sub">Huazhong University of Science and Technology, China</div>
+            <div class="sched-desc"><em>"Applying photogranules for simultaneous biogas upgrading and biogas slurry purification towards net-zero carbon emission"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row sched-indented">
+          <div class="sched-time">15:20 – 15:40</div>
+          <div>
+            <span class="sched-tag tag-invited">Invited Talk</span>
+            <div class="sched-title">Dr. Tianwei Hao</div>
+            <div class="sched-sub">University of Macau, Macau, China</div>
+            <div class="sched-desc"><em>"Why sulfate can either boost or block methane production in the same anaerobic system"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row sched-indented">
+          <div class="sched-time">15:40 – 16:00</div>
+          <div>
+            <span class="sched-tag tag-student">Student Presentation</span>
+            <div class="sched-title">Ms. Gahyun Shin</div>
+            <div class="sched-sub">Korea University, Republic of Korea</div>
+            <div class="sched-desc"><em>"Evaluation of CO₂/CH₄ selective absorption performance of ionic liquids for biogas upgrading"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">16:00 – 16:15</div>
+          <div>
+            <span class="sched-tag tag-break">Break</span>
+            <div class="sched-title">Coffee Break</div>
+          </div>
+        </div>
+
+        <!-- Session 2 -->
+        <div class="sched-row session-header">
+          <div class="sched-time">16:15 – 17:45</div>
+          <div>
+            <span class="sched-tag tag-session">Session 2</span>
+            <div class="sched-title">Biological Waste Treatment &amp; Resource Recovery</div>
+          </div>
+        </div>
+
+        <div class="sched-row sched-indented">
+          <div class="sched-time">16:15 – 16:45</div>
+          <div>
+            <span class="sched-tag tag-keynote">Keynote</span>
+            <div class="sched-title">Prof. Feng Jiang</div>
+            <div class="sched-sub">Sun Yat-sen University, China</div>
+            <div class="sched-desc"><em>"Paradigm-shifted approach for resource recovery from mine water"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row sched-indented">
+          <div class="sched-time">16:45 – 17:05</div>
+          <div>
+            <span class="sched-tag tag-invited">Invited Talk</span>
+            <div class="sched-title">Dr. Dandan Dong</div>
+            <div class="sched-sub">Korea University, Republic of Korea</div>
+            <div class="sched-desc"><em>"Enhancement of fermentative hydrogen production with addition of ionic liquid pretreated rice husk"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row sched-indented">
+          <div class="sched-time">17:05 – 17:25</div>
+          <div>
+            <span class="sched-tag tag-invited">Invited Talk</span>
+            <div class="sched-title">Dr. Surendra K.C.</div>
+            <div class="sched-sub">The Hong Kong University of Science and Technology (HKUST), Hong Kong, China</div>
+            <div class="sched-desc"><em>"Black Soldier Fly (Hermetia illucens) system for organic waste valorization"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row sched-indented">
+          <div class="sched-time">17:25 – 17:45</div>
+          <div>
+            <span class="sched-tag tag-student">Student Presentation</span>
+            <div class="sched-title">Ms. Anna Laporte</div>
+            <div class="sched-sub">Faculty of Engineering, Udayana University, Indonesia / Grenoble INP – National Polytechnic Institute, France</div>
+            <div class="sched-desc"><em>"Processing of herbal drink waste in the continuous anaerobic digester"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">18:30 onwards</div>
+          <div>
+            <span class="sched-tag tag-social">Social</span>
+            <div class="sched-title">Welcome Dinner &amp; Cultural Performance</div>
+            <div class="sched-desc">Dinner at TBD venue · Balinese cultural performance</div>
+          </div>
+        </div>
+
+      </div><!-- /day-1 -->
 
       <!-- DAY 2 -->
       <div class="day-content schedule" id="day-2">
-        <div class="sched-row"><div class="sched-time">08:30 – 09:00</div><div><span class="sched-tag tag-break">Break</span><div class="sched-title">Morning Coffee</div><div class="sched-desc">Refreshments and informal networking before the day's sessions.</div></div></div>
-        <div class="sched-row"><div class="sched-time">09:00 – 09:30</div><div><span class="sched-tag tag-keynote">Keynote 6</span><div class="sched-title">Invited Keynote Talk</div><div class="sched-desc">Invited expert or senior researcher</div></div></div>
-        <div class="sched-row"><div class="sched-time">09:30 – 10:00</div><div><span class="sched-tag tag-keynote">Keynote 7</span><div class="sched-title">Prof. Hui Lu</div><div class="sched-desc">Invited expert or senior researcher</div></div></div>
-        <div class="sched-row"><div class="sched-time">10:00 – 10:30</div><div><span class="sched-tag tag-keynote">Keynote 8</span><div class="sched-title">Invited Keynote Talk</div><div class="sched-desc">Invited expert or senior researcher</div></div></div>
-        <div class="sched-row"><div class="sched-time">10:30 – 11:00</div><div><span class="sched-tag tag-keynote">Keynote 9</span><div class="sched-title">Invited Keynote Talk</div><div class="sched-desc">Invited expert or senior researcher</div></div></div>
-        <div class="sched-row"><div class="sched-time">11:00 – 11:15</div><div><span class="sched-tag tag-break">Break</span><div class="sched-title">Coffee Break</div></div></div>
-        <div class="sched-row"><div class="sched-time">11:15 – 12:45</div><div><span class="sched-tag tag-session">Session 3</span><span class="sched-tag tag-session">Resource Recovery Technologies</span><br><span class="sched-tag tag-keynote">Keynote 10</span><div class="sched-title">Prof. Di WU</div><div class="sched-desc">"Magnetic biochar for vivianite recovery"</div></div></div>
-        <div class="sched-row"><div class="sched-time">12:45 – 14:15</div><div><span class="sched-tag tag-break">Break</span><div class="sched-title">Lunch &amp; Networking</div></div></div>
-        <div class="sched-row"><div class="sched-time">14:15 – 16:15</div><div><span class="sched-tag tag-session">Session 4</span><span class="sched-tag tag-session">Biological Processes Beyond Traditional AD</span><br><span class="sched-tag tag-keynote">Keynote 11</span><div class="sched-title">Prof. Zhen Hu</div><div class="sched-desc">"Towards sustainability in wastewater management through the biological-ecological coupling system"</div></div></div>
-        <div class="sched-row"><div class="sched-time">16:15 – 16:30</div><div><span class="sched-tag tag-break">Break</span><div class="sched-title">Coffee Break</div></div></div>
-        <div class="sched-row"><div class="sched-time">18:30 onwards</div><div><span class="sched-tag tag-social">Social</span><div class="sched-title">Conference Dinner &amp; Networking</div><div class="sched-desc">Conference dinner and networking event</div></div></div>
-      </div>
+
+        <div class="sched-row">
+          <div class="sched-time">09:00 – 10:00</div>
+          <div>
+            <span class="sched-tag tag-break">Arrival</span>
+            <div class="sched-title">Morning Coffee &amp; Networking</div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">10:00 – 10:30</div>
+          <div>
+            <span class="sched-tag tag-keynote">Keynote</span>
+            <div class="sched-title">Prof. Sungpyo Kim</div>
+            <div class="sched-sub">Korea University, Republic of Korea</div>
+            <div class="sched-desc"><em>"Creating a safe space for infectious diseases via wastewater data mining"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">10:30 – 11:00</div>
+          <div>
+            <span class="sched-tag tag-keynote">Keynote</span>
+            <div class="sched-title">Prof. Kadek Diana Harmayani</div>
+            <div class="sched-sub">Udayana University, Bali, Indonesia</div>
+            <div class="sched-desc"><em>"Reframing organic waste valorization through Tri Hita Karana: bridging circular economy and climate resilience"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">11:00 – 11:30</div>
+          <div>
+            <span class="sched-tag tag-keynote">Keynote</span>
+            <div class="sched-title">Prof. Zhen Hu</div>
+            <div class="sched-sub">Shandong University, China</div>
+            <div class="sched-desc"><em>"Towards sustainability in wastewater management through the biological-ecological coupling system"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">11:30 – 11:45</div>
+          <div>
+            <span class="sched-tag tag-break">Break</span>
+            <div class="sched-title">Coffee Break</div>
+          </div>
+        </div>
+
+        <!-- Session 3 -->
+        <div class="sched-row session-header">
+          <div class="sched-time">11:45 – 13:00</div>
+          <div>
+            <span class="sched-tag tag-session">Session 3</span>
+            <div class="sched-title">Resource Recovery Technologies</div>
+          </div>
+        </div>
+
+        <div class="sched-row sched-indented">
+          <div class="sched-time">11:45 – 12:15</div>
+          <div>
+            <span class="sched-tag tag-keynote">Keynote</span>
+            <div class="sched-title">Prof. Di Wu</div>
+            <div class="sched-sub">Ghent University, Belgium &amp; Center Director, Ghent University Global Campus, Republic of Korea</div>
+            <div class="sched-desc"><em>"Magnetic biochar for vivianite recovery"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row sched-indented">
+          <div class="sched-time">12:15 – 12:30</div>
+          <div>
+            <span class="sched-tag tag-student">Student Presentation</span>
+            <div class="sched-title">Mr. Pierre Brun</div>
+            <div class="sched-sub">Faculty of Engineering, Udayana University, Indonesia / Polytech Lyon, Université Claude Bernard Lyon 1, France</div>
+            <div class="sched-desc"><em>"On processing waste silk cocoon (Bombyx mori) from the textile industry as bioplastic"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row sched-indented">
+          <div class="sched-time">12:30 – 12:45</div>
+          <div>
+            <span class="sched-tag tag-student">Student Presentation</span>
+            <div class="sched-title">Mr. Nicolas Meuley</div>
+            <div class="sched-sub">Faculty of Engineering, Udayana University, Indonesia / Polytech Lyon, Université Claude Bernard Lyon 1, France</div>
+            <div class="sched-desc"><em>"Progress on processing and mechanical characterization of seaweed waste from Indonesian sources as bioplastic"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">12:45 – 14:15</div>
+          <div>
+            <span class="sched-tag tag-break">Break</span>
+            <div class="sched-title">Lunch &amp; Networking</div>
+          </div>
+        </div>
+
+        <!-- Session 4 -->
+        <div class="sched-row session-header">
+          <div class="sched-time">14:15 – 16:00</div>
+          <div>
+            <span class="sched-tag tag-session">Session 4</span>
+            <div class="sched-title">Biological Processes Beyond Traditional AD</div>
+          </div>
+        </div>
+
+        <div class="sched-row sched-indented">
+          <div class="sched-time">14:15 – 14:45</div>
+          <div>
+            <span class="sched-tag tag-keynote">Keynote</span>
+            <div class="sched-title">Prof. Ida Ayu Rai Widhiawati</div>
+            <div class="sched-sub">Engineering Faculty, Udayana University, Indonesia</div>
+            <div class="sched-desc"><em>"Organic waste management and the role of stakeholders: Denpasar City, Bali"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row sched-indented">
+          <div class="sched-time">14:45 – 15:00</div>
+          <div>
+            <span class="sched-tag tag-student">Student Presentation</span>
+            <div class="sched-title">Mr. Jang Ho Lee</div>
+            <div class="sched-sub">Korea University, Republic of Korea</div>
+            <div class="sched-desc"><em>"Effects of powdered activated carbon types on aerobic granular sludge formation and organic micro-pollutant removal"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row sched-indented">
+          <div class="sched-time">15:00 – 15:15</div>
+          <div>
+            <span class="sched-tag tag-student">Student Presentation</span>
+            <div class="sched-title">Mr. Barthelemy Robillard</div>
+            <div class="sched-sub">Faculty of Engineering, Udayana University, Indonesia / Polytech Lyon, Université Claude Bernard Lyon 1, France</div>
+            <div class="sched-desc"><em>"On dedication for waste to energy program: accurate setting of 4 strokes spark ignition engine for biogas electric generator"</em></div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">15:15 – 15:45</div>
+          <div>
+            <span class="sched-tag tag-ceremony">Ceremony</span>
+            <div class="sched-title">Closing Ceremony</div>
+            <div class="sched-desc">Closing remarks · Acknowledgements · Future collaboration plans</div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">18:30 onwards</div>
+          <div>
+            <span class="sched-tag tag-social">Social</span>
+            <div class="sched-title">Conference Dinner &amp; Networking</div>
+          </div>
+        </div>
+
+      </div><!-- /day-2 -->
 
       <!-- DAY 3 -->
       <div class="day-content schedule" id="day-3">
-        <div class="sched-row"><div class="sched-time">08:30 – 09:00</div><div><span class="sched-tag tag-break">Break</span><div class="sched-title">Morning Coffee</div><div class="sched-desc">Refreshments and informal networking before the day's sessions.</div></div></div>
-        <div class="sched-row"><div class="sched-time">09:00 – 11:00</div><div><span class="sched-tag tag-session">Session 5</span><span class="sched-tag tag-session">Case Studies &amp; Applications; Sustainability Assessments &amp; Climate Impacts</span><br><span class="sched-tag tag-keynote">Keynote 12</span><div class="sched-title">Dr. Ida Ayu Rai Widhiawati, S.T., M.T.</div><div class="sched-desc">"Organic waste management and the role of stakeholders: Case study Denpasar City, Bali, Indonesia"</div></div></div>
-        <div class="sched-row"><div class="sched-time">11:00 – 11:15</div><div><span class="sched-tag tag-ceremony">Ceremony</span><div class="sched-title">Closing Ceremony</div><div class="sched-desc">Closing remarks · Acknowledgements · Future collaboration plans</div></div></div>
-        <div class="sched-row"><div class="sched-time">11:15 – 11:30</div><div><span class="sched-tag tag-break">Break</span><div class="sched-title">Coffee Break &amp; Site Visit Departure</div><div class="sched-desc">Brief refreshments before boarding transport to the site visit.</div></div></div>
-        <div class="sched-row"><div class="sched-time">11:30 – 17:00</div><div><span class="sched-tag tag-social">Site Visit</span><div class="sched-title">Site Visit</div><div class="sched-desc">Visit to a local biogas plant or organic waste processing site (TBD). Transport and lunch provided.</div></div></div>
-        <div class="sched-row"><div class="sched-time">17:30 onwards</div><div><span class="sched-tag tag-social">Social</span><div class="sched-title">Farewell Dinner</div><div class="sched-desc">Farewell dinner and networking</div></div></div>
-      </div>    </div>
+
+        <div class="sched-row">
+          <div class="sched-time">10:00 – 11:00</div>
+          <div>
+            <span class="sched-tag tag-break">Arrival</span>
+            <div class="sched-title">Morning Coffee &amp; Site Visit Departure</div>
+            <div class="sched-desc">Brief refreshments before boarding transport.</div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">11:00 – 17:00</div>
+          <div>
+            <span class="sched-tag tag-social">Site Visit</span>
+            <div class="sched-title">Visit to Local Anaerobic Digestion Plant</div>
+            <div class="sched-desc">Transport and lunch provided.</div>
+          </div>
+        </div>
+
+        <div class="sched-row">
+          <div class="sched-time">17:30 onwards</div>
+          <div>
+            <span class="sched-tag tag-social">Social</span>
+            <div class="sched-title">Farewell Dinner &amp; Networking</div>
+          </div>
+        </div>
+
+      </div><!-- /day-3 -->
+
+    </div>
   </section>
 </div>
 
