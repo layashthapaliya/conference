@@ -392,12 +392,18 @@ nav {
 .sched-time  { font-size: 0.74rem; color: var(--muted); padding-top: 2px; line-height: 1.4; font-variant-numeric: tabular-nums; }
 .sched-tag   { display: inline-block; font-size: 0.64rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.16rem 0.5rem; border-radius: 3px; margin-bottom: 0.3rem; }
 .tag-keynote  { background: var(--amber-lt);  color: var(--amber-d); }
+.tag-plenary  { background: var(--amber-lt);  color: var(--amber-d); }
 .tag-session  { background: var(--teal-lt);   color: var(--teal-d); }
 .tag-break    { background: var(--bg3);        color: var(--muted); }
 .tag-social   { background: var(--coral-lt);  color: var(--coral-d); }
 .tag-ceremony { background: var(--violet-lt); color: var(--violet-d); }
+.tag-invited  { background: #e0f0ff;          color: #1a5fa8; }
+.tag-student  { background: #e8f5e9;          color: #2e7d32; }
 .sched-title  { font-size: 0.93rem; font-weight: 600; color: var(--text); }
+.sched-sub    { font-size: 0.78rem; color: var(--muted); margin-top: 0.1rem; font-style: italic; }
 .sched-desc   { font-size: 0.82rem; color: var(--text2); margin-top: 0.18rem; line-height: 1.52; }
+.sched-indented { padding-left: 1rem; border-left: 2px solid var(--bg3); margin-left: 0; }
+.session-header { background: var(--bg2); border-radius: 6px; }
 
 /* ── Speakers ── */
 .speaker-card {
